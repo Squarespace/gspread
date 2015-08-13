@@ -72,7 +72,6 @@ class HTTPSession(object):
         response = self.connections[uri.scheme + uri.netloc].getresponse()
 
         if response.status > 399:
-            #print response
             raise HTTPError(response.status, "%s: %s" % (response.status, response.read()))
         return response
 
