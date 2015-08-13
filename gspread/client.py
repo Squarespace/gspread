@@ -278,7 +278,8 @@ class Client(object):
         return feed.findall(_ns('entry'))
 
     def delete_row(self, row_edit_url):
-        self.session.delete(row_edit_url)
+        r = self.session.delete(row_edit_url)
+        r.read()
 
     def put_feed(self, url, data):
         headers = {'Content-Type': 'application/atom+xml',
