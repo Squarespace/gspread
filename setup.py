@@ -37,7 +37,7 @@ setup(
     packages=['gspread'],
     description=description,
     long_description=long_description,
-    version=gspread.__version__,
+    version='0.3.0+sqsp',
     author='Anton Burnashev',
     author_email='fuss.here@gmail.com',
     url='https://github.com/burnash/gspread',
@@ -52,7 +52,8 @@ setup(
         "Intended Audience :: End Users/Desktop",
         "Intended Audience :: Science/Research",
         "Topic :: Office/Business :: Financial :: Spreadsheet",
-        "Topic :: Software Development :: Libraries :: Python Modules"
+        "Topic :: Software Development :: Libraries :: Python Modules",
+        "Private :: Do Not Upload",
         ],
     license='MIT'
     )
